@@ -1,0 +1,71 @@
+.training-comp{
+    width: 100%;
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+}
+
+.training-comp .left{
+    text-align: center;
+    margin: auto;
+    padding: 1rem 4rem;
+    max-width: 600px;
+}
+
+.training-comp .left p{
+    margin: 1.2rem 0;
+}
+
+.training-comp .right{
+    width: 100%;
+}
+
+.right .img-container{
+    display: grid;
+    grid-template-columns: (12, 1fr);
+    position: relative;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+}
+
+.right .img{
+    max-width: 60%;
+    border: 1px solid #333;
+    height: 400px;
+    width: 450px;
+}
+
+.right .top{
+    position: absolute;
+    grid-column: 1 / span 8;
+    grid-row: 1;
+    
+    z-index: 6;
+    top: 100px;
+}
+
+.right .bottom{
+    position: absolute;
+    grid-column: 4/ -1;
+    grid-row: 1;
+    z-index: 5;
+    left: 180px;
+   
+}
+
+@media (max-width:1140px){
+    .training-comp{
+        grid-template-columns: 1fr;
+    }
+
+    .training-comp .left{
+        margin-bottom: 10px;
+    }
+
+    .training-comp .img{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}

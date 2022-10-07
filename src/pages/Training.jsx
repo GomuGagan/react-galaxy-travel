@@ -2,17 +2,17 @@ import React from 'react'
 import Footer from '../components/Footer'
 import HeroImage from '../components/HeroImage'
 import Navbar from '../components/Navbar'
-import PricingCard from '../components/PricingCard'
+import TrainingComp from '../components/TrainingComp'
 
-const Pricing = () => {
+const Training = () => {
   return (
     <div>
         <Navbar />
-        <HeroImage heading="Pricing" text="Choose your Trip."/>
-        <PricingCard />
+        <HeroImage heading="Training" text="pre-flight and In-flight Training." />
+        <TrainingComp />
         <Footer />
     </div>
   )
 }
 
-export default Pricing
+export default Training
